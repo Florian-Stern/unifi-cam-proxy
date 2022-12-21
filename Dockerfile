@@ -1,4 +1,5 @@
-FROM python:3.8-alpine3.10
+FROM python:3.9.15-alpine3.16
+RUN apk add --update ffmpeg netcat-openbsd git
 WORKDIR /app
 
 RUN apk add --update gcc libc-dev linux-headers libusb-dev
